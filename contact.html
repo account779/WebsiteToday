@@ -22,8 +22,28 @@
 <main>
   <section>
     <h2>Neem direct contact op</h2>
-    <p><a href="https://wa.me/06XXXXXXXX" class="cta-button">WhatsApp Nu</a></p>
-    <p>Mail: <a href="mailto:jouwmail@example.com">jouwmail@example.com</a></p>
+    <p>📱 <a href="https://wa.me/06XXXXXXXX" class="cta-button">WhatsApp Nu</a></p>
+    <p>✉️ Mail: <a href="mailto:jouwmail@example.com">jouwmail@example.com</a></p>
+  </section>
+
+  <section>
+    <h2>Of stuur ons een bericht</h2>
+    <form action="https://formsubmit.co/jouwmail@example.com" method="POST" class="contact-form">
+      <!-- Anti-spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://jouwgebruikersnaam.github.io/sos-website/bedankt.html">
+
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Verstuur</button>
+    </form>
   </section>
 </main>
 
