@@ -1,25 +1,42 @@
-/* Fade-in animatie */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Algemeen */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f7;
+  color: #111;
+  line-height: 1.6;
 }
 
-/* Moderne gradient knoppen */
+h1,h2,h3 { font-weight: 600; color: #111; margin-bottom: 15px; }
+p { color: #444; font-size: 1.1em; }
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #111;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover { color: #3b82f6; }
+
+/* Main */
+main { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+section { margin-bottom: 80px; text-align: center; }
+
+/* CTA button */
 .cta-button {
   background: linear-gradient(90deg, #6366f1, #3b82f6);
   color: white;
   padding: 14px 28px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-.cta-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(99,102,241,0.4);
-}
+  f
