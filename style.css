@@ -1,72 +1,162 @@
+/* Algemene stijl - geïnspireerd op Apple */
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  background: #f9fafc;
-  color: #333;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #444;
+  font-size: 1.1em;
 }
 
 header {
-  background: linear-gradient(135deg, #ff4d4d, #ff944d);
-  color: white;
-  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
   text-align: center;
+  padding: 20px;
 }
 
 nav {
   margin-top: 10px;
 }
 nav a {
-  color: white;
-  margin: 0 10px;
+  color: #111;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 nav a:hover {
-  text-decoration: underline;
+  color: #555;
 }
 
 main {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 section {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 80px;
+  text-align: center;
 }
 
 .cta-button {
-  background: white;
-  color: #ff4d4d;
-  padding: 10px 20px;
-  border-radius: 20px;
+  background: #111;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 .cta-button:hover {
-  background: #ff4d4d;
-  color: white;
+  background: #444;
 }
 
-.portfolio-grid, .reviews-grid {
+/* Diensten */
+.service-card {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  text-align: left;
+}
+.service-card h3 {
+  font-size: 1.5em;
+}
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #111;
+  margin-top: 10px;
+}
+
+/* Portfolio */
+.portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
+}
+.portfolio-item img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* Reviews */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 .review {
-  background: #fff7e6;
-  padding: 15px;
-  border-left: 5px solid #ff4d4d;
-  border-radius: 8px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  font-style: italic;
+}
+.review strong {
+  display: block;
+  margin-top: 10px;
+  color: #111;
 }
 
+/* Contact formulier */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-form label {
+  font-weight: 500;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.contact-form button {
+  background: #111;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #444;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  background: #eee;
+  padding: 20px;
+  background: #f5f5f7;
+  color: #666;
+  font-size: 0.9em;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-grid, .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
