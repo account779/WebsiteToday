@@ -1,21 +1,19 @@
-// Fade-in bij scroll
+// Fade-in animatie
 document.addEventListener("scroll", () => {
   const elements = document.querySelectorAll(".fade-in");
   const triggerBottom = window.innerHeight * 0.9;
-
   elements.forEach(el => {
     const boxTop = el.getBoundingClientRect().top;
-    if (boxTop < triggerBottom) {
-      el.classList.add("visible");
-    }
+    if (boxTop < triggerBottom) el.classList.add("visible");
   });
 });
 
-// Automatische review carrousel
+// Review carrousel
 const reviews = document.querySelectorAll(".reviews-grid .review");
 let currentReview = 0;
+reviews.forEach((r,i) => i!==0 ? r.style.display="none": r.style.display="block");
 setInterval(() => {
-  reviews.forEach((r, i) => r.style.display = "none");
-  reviews[currentReview].style.display = "block";
-  currentReview = (currentReview + 1) % reviews.length;
+  reviews[currentReview].style.display="none";
+  currentReview = (currentReview+1) % reviews.length;
+  reviews[currentReview].style.display="block";
 }, 5000);
