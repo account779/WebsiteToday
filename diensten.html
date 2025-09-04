@@ -1,46 +1,155 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diensten - SOS Website Service</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diensten - Abonnementen</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* Fade-in animatie */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.6s forwards;
+}
+</style>
 </head>
-<body>
-<header>
-  <h1>Diensten</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="diensten.html">Diensten</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<body class="bg-gray-100">
+
+<!-- Navigatie -->
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">Bedrijfsnaam</h1>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+        <li><a href="diensten.html" class="text-blue-600 font-semibold">Diensten</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <section class="fade-in">
-    <h2>Onze diensten</h2>
-    <div class="service-grid">
-      <div class="service">
-        <h3>Starterspakket</h3>
-        <p>Een simpele, maar professionele website. Ideaal voor kleine bedrijven.</p>
-        <p><strong>€199</strong></p>
+<!-- Introductie Diensten -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-4xl font-bold mb-4">Onze Diensten</h2>
+    <p class="text-lg text-gray-700 mb-6">
+      Wij bieden professionele diensten op maat voor bedrijven en particulieren. Met onze flexibele abonnementen kies je precies wat bij jouw behoeften past.
+    </p>
+    <p class="text-gray-600">
+      Of je nu starter bent of op zoek naar uitgebreide ondersteuning, wij hebben een pakket dat perfect aansluit.
+    </p>
+  </div>
+</section>
+
+<!-- Abonnementen -->
+<section class="bg-gray-50 py-12">
+  <div class="bg-blue-600 text-white text-center py-12 px-6 rounded-lg mb-10 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-4">Onze Abonnementen</h2>
+    <p class="text-xl">
+      Kies een abonnement dat bij jou past en profiteer van gemak, continuïteit en extra voordelen.
+    </p>
+  </div>
+
+  <div class="text-center mb-8">
+    <p class="text-lg md:text-xl font-semibold text-gray-700">
+      “Flexibel, compleet en altijd de ondersteuning die je nodig hebt.”
+    </p>
+  </div>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+    <!-- Basis -->
+    <div class="bg-white shadow rounded-lg p-6 text-center flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl opacity-0 animate-fadeIn">
+      <div class="text-blue-600 text-4xl mb-4 transform transition duration-300 hover:animate-bounce">🟢</div>
+      <h3 class="text-xl font-semibold mb-2">Basis</h3>
+      <p class="text-gray-600 mb-4">Essentiële functies voor starters.</p>
+      <ul class="text-gray-600 mb-4 list-disc list-inside text-left w-full max-w-xs mx-auto">
+        <li>Toegang tot kernfuncties</li>
+        <li>Regelmatige updates</li>
+        <li>Basis ondersteuning</li>
+      </ul>
+      <span class="text-2xl font-bold mb-4">€19 / maand</span>
+      <a href="#aanmelden" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+        Aanmelden
+      </a>
+    </div>
+
+    <!-- Plus -->
+    <div class="bg-white shadow rounded-lg p-6 text-center flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl opacity-0 animate-fadeIn" style="animation-delay: 150ms;">
+      <div class="text-green-600 text-4xl mb-4 transform transition duration-300 hover:animate-bounce">⚡</div>
+      <h3 class="text-xl font-semibold mb-2">Plus</h3>
+      <p class="text-gray-600 mb-4">Extra flexibiliteit en services.</p>
+      <ul class="text-gray-600 mb-4 list-disc list-inside text-left w-full max-w-xs mx-auto">
+        <li>Alles van Basis</li>
+        <li>Extra functionaliteiten</li>
+        <li>Snel support team</li>
+      </ul>
+      <span class="text-2xl font-bold mb-4">€39 / maand</span>
+      <a href="#aanmelden" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        Aanmelden
+      </a>
+    </div>
+
+    <!-- Premium -->
+    <div class="bg-white shadow rounded-lg p-6 text-center flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl opacity-0 animate-fadeIn relative" style="animation-delay: 300ms;">
+      <!-- Badge -->
+      <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+        Meest populair!
       </div>
-      <div class="service">
-        <h3>Business pakket</h3>
-        <p>Meerdere pagina’s, SEO-optimalisatie en maatwerk design.</p>
-        <p><strong>€499</strong></p>
+      <div class="text-yellow-600 text-4xl mb-4 transform transition duration-300 hover:animate-bounce">🌟</div>
+      <h3 class="text-xl font-semibold mb-2">Premium</h3>
+      <p class="text-gray-600 mb-4">Alles-in-één pakket met volledige ondersteuning en exclusieve voordelen.</p>
+      <ul class="text-gray-600 mb-4 list-disc list-inside text-left w-full max-w-xs mx-auto">
+        <li>Alles van Plus</li>
+        <li>Persoonlijke begeleiding</li>
+        <li>Exclusieve extra’s</li>
+      </ul>
+      <span class="text-2xl font-bold mb-4">€69 / maand</span>
+      <a href="#aanmelden" class="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition">
+        Aanmelden
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-10">Wat onze klanten zeggen</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="bg-white shadow rounded-lg p-6 opacity-0 animate-fadeIn">
+        <p class="text-gray-700 mb-4">“Het Basis-abonnement is ideaal voor ons kleine team. Super makkelijk en overzichtelijk.”</p>
+        <p class="font-semibold text-gray-900">- Lisa Jansen</p>
       </div>
-      <div class="service">
-        <h3>Premium pakket</h3>
-        <p>Alles uit het Business pakket + onderhoud, webshop & persoonlijke begeleiding.</p>
-        <p><strong>€999</strong></p>
+      <!-- Testimonial 2 -->
+      <div class="bg-white shadow rounded-lg p-6 opacity-0 animate-fadeIn" style="animation-delay: 150ms;">
+        <p class="text-gray-700 mb-4">“Met het Plus-pakket hebben we meer flexibiliteit en snelle ondersteuning. Echt een aanrader!”</p>
+        <p class="font-semibold text-gray-900">- Mark de Vries</p>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-white shadow rounded-lg p-6 opacity-0 animate-fadeIn" style="animation-delay: 300ms;">
+        <p class="text-gray-700 mb-4">“Premium is top! Persoonlijke begeleiding en alle functies die we nodig hebben voor ons bedrijf.”</p>
+        <p class="font-semibold text-gray-900">- Sophie van Dam</p>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
-<footer>© 2025 SOS Website Service</footer>
-<script src="script.js"></script>
+<!-- Footer -->
+<footer class="bg-white mt-12 shadow">
+  <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-600">&copy; 2025 Bedrijfsnaam. Alle rechten voorbehouden.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="#" class="text-gray-600 hover:text-blue-600">Privacybeleid</a>
+      <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
