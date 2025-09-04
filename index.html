@@ -1,71 +1,44 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOS Website Service - Home</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Bedrijfsnaam</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header>
-  <h1>SOS Website Service</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="diensten.html">Diensten</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<body class="bg-gray-100">
+
+<!-- Header / Navigatie -->
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">Bedrijfsnaam</h1>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-blue-600 font-semibold">Home</a></li>
+        <li><a href="diensten.html" class="text-gray-700 hover:text-blue-600">Diensten</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <!-- Welkom sectie -->
-  <section class="fade-in">
-    <h2>Welkom bij SOS Website Service</h2>
-    <p>Wij bouwen <strong>snelle, moderne en betrouwbare websites</strong>. Binnen 24 uur live!</p>
-    <a href="contact.html" class="cta-button">Start vandaag</a>
-  </section>
+<!-- Hero / Intro -->
+<section class="bg-blue-600 text-white py-20 text-center">
+  <h2 class="text-5xl font-bold mb-4">Welkom bij Bedrijfsnaam</h2>
+  <p class="text-xl max-w-2xl mx-auto">Professionele diensten op maat met flexibele abonnementen voor elk type klant.</p>
+  <a href="diensten.html" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">Bekijk onze diensten</a>
+</section>
 
-  <!-- Waarom kiezen voor ons -->
-  <section class="fade-in">
-    <h2>Waarom kiezen voor ons?</h2>
-    <ul>
-      <li>🔹 Supersnel live</li>
-      <li>🔹 Persoonlijk contact via WhatsApp en e-mail</li>
-      <li>🔹 Betaalbaar en schaalbaar</li>
-    </ul>
-  </section>
-
-  <!-- Hoe werkt het -->
-  <section class="fade-in">
-    <h2>Hoe werkt het?</h2>
-    <ol>
-      <li>Contact via WhatsApp of formulier</li>
-      <li>Lever je teksten, logo en wensen aan</li>
-      <li>Binnen 24 uur live!</li>
-    </ol>
-  </section>
-
-  <!-- Reviews sectie -->
-  <section class="fade-in">
-    <h2>Wat klanten zeggen</h2>
-    <div class="reviews-grid">
-      <div class="review">⭐️⭐️⭐️⭐️⭐️
-        <p>“Binnen 1 dag online! Perfect voor mijn kapsalon.”</p>
-        <strong>- Fatima</strong>
-      </div>
-      <div class="review">⭐️⭐️⭐️⭐️⭐️
-        <p>“Professioneel en vriendelijk, mijn studentenvereniging heeft nu een top website.”</p>
-        <strong>- Jasper</strong>
-      </div>
-      <div class="review">⭐️⭐️⭐️⭐️⭐️
-        <p>“Super service, ook de updates achteraf worden snel geregeld.”</p>
-        <strong>- Lotte</strong>
-      </div>
+<!-- Footer -->
+<footer class="bg-white mt-12 shadow">
+  <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-600">&copy; 2025 Bedrijfsnaam. Alle rechten voorbehouden.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="#" class="text-gray-600 hover:text-blue-600">Privacybeleid</a>
+      <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
     </div>
-  </section>
-</main>
+  </div>
+</footer>
 
-<footer>© 2025 SOS Website Service</footer>
-<script src="script.js"></script>
 </body>
 </html>
